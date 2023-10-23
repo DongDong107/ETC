@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 300px;
+        border : 1px solid;
+    }
+</style>
+<body>
+    <button id="plus">추가</button>
+    <div id="box" class="box">
+        <input type="radio">
+        <input id="text" type="text" >
+        <button id="del">삭제</button>
+    </div>
+
+</body>
+<script>
+    let btn = document.querySelector('#plus');
+    let txt = document.querySelector('#text');
+    let box = document.querySelector('#box');
+    let delBtn = document.querySelector('#del');
+
+    btn.addEventListener('click', ()=> {
+        //let newBox = document.createElement(box);
+        let boxList = document.querySelectorAll('#box');
+        console.log(boxList);
+        // div 요소 복제
+        let clone = box.cloneNode(true);
+        // 복제된 div를 원래 div 뒤에 추가
+        box.parentNode.insertBefore(clone, box.nextSibling);
+    })
+
+    delBtn.addEventListener('click', ()=> {
+        
+    })
+
+
+</script>
+</html>
