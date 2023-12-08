@@ -1,0 +1,111 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  a:hover, a:focus {
+    outline: none;
+  }
+  .back {
+    padding: 50px 0 150px 0;
+  }
+  .menu a {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Lato;
+    font-size: 17pt;
+    font-weight: 400;
+    padding: 15px 25px;
+    /**/
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .color-8 {
+    background: #353535;
+  }
+  
+  body * {
+    font-family: Lato !important;
+  }
+  
+  .SMN_effect-18 a {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .SMN_effect-18 a>span {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .SMN_effect-18 a:before, .SMN_effect-18 a:after, .SMN_effect-18 a>span:before, .SMN_effect-18 a>span:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .SMN_effect-18 a:before, .SMN_effect-18 a:after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .SMN_effect-18 a:before {
+    width: 100%;
+    height: 1px;
+    transform: translateX(-100%);
+    transition-delay: 0.9s;
+  }
+  
+  .SMN_effect-18 a:after {
+    width: 1px;
+    height: 100%;
+    transform: translateY(100%);
+    transition-delay: 0.6s;
+  }
+  
+  .SMN_effect-18 a>span:before, .SMN_effect-18 a>span:after {
+    top: 0;
+    left: 0;
+  }
+  
+  .SMN_effect-18 a>span:before {
+    width: 100%;
+    height: 1px;
+    transform: translateX(100%);
+    transition-delay: 0.3s;
+  }
+  
+  .SMN_effect-18 a>span:after {
+    width: 1px;
+    height: 100%;
+    transform: translateY(-100%);
+    transition-delay: 0s;
+  }
+  
+  .SMN_effect-18 a:hover:before, .SMN_effect-18 a:hover:after, .SMN_effect-18 a:hover>span:before, .SMN_effect-18 a:hover>span:after {
+    transform: translate(0, 0);
+  }
+  
+  .SMN_effect-18 a:hover:before {
+    transition-delay: 0s;
+  }
+  
+  .SMN_effect-18 a:hover:after {
+    transition-delay: 0.3s;
+  }
+  
+  .SMN_effect-18 a:hover>span:before {
+    transition-delay: 0.6s;
+  }
+  
+  .SMN_effect-18 a:hover>span:after {
+    transition-delay: 0.9s;
+  }

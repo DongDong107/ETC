@@ -12,6 +12,16 @@ ul{
     justify-content: space-evenly;       
 }
 
+#bigBox{
+    border-radius: 30px;
+    transition-timing-function: ease;
+    transition-duration: 0.5s;
+}
+
+#bigBox:hover{
+    box-shadow: 0px 0px 24px rgb(0, 0, 0, 0.6);
+}
+
 .box {
     display: grid;
     grid-template-rows: 2fr 1fr;
@@ -54,6 +64,8 @@ ul{
 #now{
     width:700px;
     height:350px;
+    display: grid;
+    grid-template-columns: 0.5fr 1.8fr 1fr 0.5fr;
 }
 
 .sun{
