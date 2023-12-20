@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #box{
+        width: 300px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #items{
+        width:100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    #item{
+        width: 100%;
+        height: 100%;
+        /*position: relative;*/
+        position:absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <button>◀</button>
+    <section id="box">
+        <div id="items">
+            <div id="item" style="background-color: red;"></div>
+            <div id="item" style="background-color: blue;"></div>
+            <div id="item" style="background-color: green;"></div>
+            <div id="item" style="background-color: yellow;"></div>
+            <div id="item" style="background-color: purple;"></div>
+        </div>
+        <!-- <ul id="items">
+            <li id="item" style="background-color: red;"></li>
+            <li id="item" style="background-color: blue;"></li>
+            <li id="item" style="background-color: green;"></li>
+            <li id="item" style="background-color: yellow;"></li>
+            <li id="item" style="background-color: purple;"></li>
+        </ul> -->
+    </section>
+    <button>▶</button>
+</body>
+</html>
