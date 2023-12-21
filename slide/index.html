@@ -12,34 +12,62 @@
         align-items: center;
     }
 
+    li{
+        list-style: none;
+    }
+
     #box{
         width: 300px;
         height: 450px;
         position: relative;
         overflow: hidden;
+        
     }
     
     #items{
-        width:100%;
+        width: 500%;
         height: 100%;
+        
+        display: flex;
+
         overflow: hidden;
         position: relative;
         margin: 0;
         padding: 0;
+
+        transition: 0.5s;
     }
     #item{
-        width: 100%;
+        width: 300px;
         height: 100%;
-        /*position: relative;*/
-        position:absolute;
+        
+        float: left;
+        
         list-style: none;
         margin: 0;
         padding: 0;
     }
+
+    .active{
+        color: red;
+    }
+
+    #spots{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 </style>
 <body>
-    <button>◀</button>
+    <button id="back">◀</button>
     <section id="box">
+        <div id="spots">
+            <div id="spot" class="active">★</div>
+            <div id="spot">★</div>
+            <div id="spot">★</div>
+            <div id="spot">★</div>
+            <div id="spot">★</div>
+        </div>
         <div id="items">
             <div id="item" style="background-color: red;"></div>
             <div id="item" style="background-color: blue;"></div>
@@ -55,6 +83,7 @@
             <li id="item" style="background-color: purple;"></li>
         </ul> -->
     </section>
-    <button>▶</button>
+    <button id="next">▶</button>
 </body>
+<script src="app.js"></script>
 </html>
