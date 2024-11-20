@@ -8,7 +8,7 @@ navigator.geolocation.getCurrentPosition((position)=>{
 
 console.log(latitude, longitude);
 
-const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=JEhDmCwhRn8qnYcdy51GNHZ73w%2FOjY25glFUFhUYizJfsdJVcbmRqYTBihA87eMuYrovbfBWPiDRF1bQ0dANzw%3D%3D&pageNo=1&numOfRows=1000&dataType=json&base_date=20231215&base_time=0500&nx=60&ny=127`;
+const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?serviceKey=JEhDmCwhRn8qnYcdy51GNHZ73w%2FOjY25glFUFhUYizJfsdJVcbmRqYTBihA87eMuYrovbfBWPiDRF1bQ0dANzw%3D%3D&pageNo=1&numOfRows=1000&dataType=JSON&base_date=20241119&base_time=0500&nx=37&ny=126`;
 
 let arr = [];
 async function loadWeather () {
@@ -16,11 +16,11 @@ async function loadWeather () {
   await fetch(url)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     arr = data.response.body.items.item;
   })
   .then(()=> {
-    arr.filter(i => i.fcstDate === "20231215") ?
-    console.log('test') : '';
+    arr.filter(i => i.fcstDate === "20241119") ? console.log('test') : '';
   })
 }
 

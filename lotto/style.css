@@ -1,0 +1,28 @@
+#numBox {
+    display: flex;
+    justify-content: center;
+
+}
+
+.num {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    border: rgba(0,0,0,0.1) 0.5px solid;
+    box-shadow: 0px 0px 24px rgb(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.num:hover{
+    border: rgba(0,0,0,0.1) 3px solid;
+    box-shadow: 0px 0px 36px rgb(0, 0, 0, 0.1);
+}
+
+#btnBox {
+    display: flex;
+    justify-content: center;
+}
